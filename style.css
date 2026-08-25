@@ -94,3 +94,15 @@
   .service-card[data-service]:hover{transform:translateY(-6px);background:#f0f8fc;box-shadow:var(--shadow)}
   .service-card-feature[data-service]:hover{background:var(--blue);color:var(--white)}
 }
+
+/* Desktop-only testimonial in the hero; mobile layout intentionally remains unchanged. */
+.hero-review{display:none}
+@media(min-width:641px){
+  .hero{padding-top:42px}
+  .hero-grid{min-height:calc(100dvh - 172px)}
+  .hero-review{display:flex;gap:14px;align-items:flex-start;max-width:500px;margin-top:20px;padding:15px 18px;border:1px solid #e0edf4;border-radius:14px;background:rgba(248,251,253,.9);box-shadow:0 14px 30px rgba(24,75,108,.07)}
+  .review-mark{color:var(--blue);font-family:Georgia,serif;font-size:46px;line-height:.72}
+  .hero-review blockquote{margin:0;color:var(--ink);font-size:11px;line-height:1.55}
+  .hero-review p{display:flex;gap:7px;align-items:center;margin:9px 0 0;color:var(--muted);font-size:10px}
+  .hero-review strong{color:var(--ink);font-size:10px}
+}
