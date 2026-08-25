@@ -6,13 +6,15 @@
 /* UX refinements: warmer trust accent, faster reveal and clearer form controls. */
 :root{--milk:#f4ede3}
 .cta-microcopy{display:block;margin-top:10px;color:var(--muted);font-size:10px;line-height:1.3}
+.accent-underline{color:var(--blue);font-weight:800;text-decoration-line:underline;text-decoration-thickness:2px;text-underline-offset:5px}
 .hero-badge{width:132px;height:132px;background:var(--milk);color:var(--ink)}
 .hero-badge span{font-size:25px}
 .hero-badge small{color:var(--muted)}
 .service-card>a,.service-book{position:absolute;right:24px;bottom:22px;font-size:22px}
-.service-book{background:none;color:var(--blue);padding:0}
-.service-card-feature .service-book{color:#fff}
-.service-book:hover{transform:translate(2px,-2px)}
+.service-book{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--blue);padding:0;box-shadow:0 10px 22px rgba(16,43,73,.08);transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.service-card-feature .service-book{background:#fff;color:var(--blue);border-color:rgba(255,255,255,.72)}
+.service-book:hover,.service-book:focus-visible{background:var(--ink);color:#fff;box-shadow:0 14px 28px rgba(16,43,73,.18);transform:translate(2px,-2px);outline:none}
+.service-book:active{transform:translate(1px,0);background:#153657;color:#fff}
 .doctor-info small{display:block;margin-top:11px;color:var(--blue);font-size:10px;font-weight:700}
 .consent{display:flex!important;align-items:flex-start;gap:9px;margin:2px 0 20px!important}
 .consent input{width:16px!important;height:16px;margin:1px 0 0;accent-color:var(--blue)}
