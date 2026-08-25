@@ -19,6 +19,35 @@
 .consent{display:flex!important;align-items:flex-start;gap:9px;margin:2px 0 20px!important}
 .consent input{width:16px!important;height:16px;margin:1px 0 0;accent-color:var(--blue)}
 .consent span{margin:0!important;font-size:10px!important;font-weight:400!important;line-height:1.35}
-.reveal{opacity:0;transform:translateY(12px);transition:opacity .32s ease,transform .32s ease}
-.reveal.is-visible{opacity:1;transform:none}
-.reveal-delay{transition-delay:.06s}
+.reveal,.reveal.is-visible{opacity:1;transform:none;transition:none}
+.reveal-delay{transition-delay:0}
+
+/* Booking controls, responsive form layout and calmer micro-typography. */
+.eyebrow,.cta-microcopy,.brand small,.desktop-nav a,.phone-link,.socials a,.language-switch,.hero-proof,.section-heading>p,.contact-details span,.lead-form label span,.modal-dialog label span,.consent span,.form-status,.footer-grid>p,.footer-links,.footer-bottom,.hero-note small,.hero-badge small{font-family:"Nunito Sans",Arial,"Helvetica Neue",sans-serif}
+.form-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lead-form select,.modal-dialog select{width:100%;min-height:40px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink);padding:10px 24px 10px 0;outline:none}
+.lead-form select:focus,.modal-dialog select:focus{border-color:var(--blue);box-shadow:0 1px 0 var(--blue)}
+.service-card-feature,.service-card-feature:hover,.service-card-feature:focus-within,.service-card-feature:active{background:var(--blue);color:var(--white)}
+.service-card-feature .service-book,.service-card-feature .service-book:hover,.service-card-feature .service-book:focus-visible,.service-card-feature .service-book:active{background:rgba(255,255,255,.16);color:var(--white);border-color:rgba(255,255,255,.68);box-shadow:none}
+.service-book{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.service-book:active{transform:scale(.92);box-shadow:none}
+.service-card-feature .service-book:active{transform:scale(.92)}
+.modal.is-open{padding:16px 0;overflow-y:auto}
+.modal-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
+@media(max-width:640px){
+  .form-choice-grid{grid-template-columns:1fr;gap:0}
+  .lead-form select,.modal-dialog select{font-size:16px}
+  .modal-dialog{width:min(470px,calc(100% - 24px));padding:28px 22px}
+  .modal-dialog h2{font-size:clamp(36px,11vw,42px)}
+  .service-card,.service-card-feature{min-height:242px}
+  .service-card-feature:hover,.service-card-feature:focus-within,.service-card-feature:active{transform:none}
+  .floating-cta{bottom:calc(16px + env(safe-area-inset-bottom));right:16px}
+}
+@media(max-width:420px){
+  .hero h1{font-size:clamp(42px,13vw,52px)}
+  .hero-visual{min-height:350px}
+  .hero-note{max-width:calc(100% - 64px)}
+  .hero-note small{line-height:1.25}
+  .service-card h3{font-size:17px}
+  .service-card p{max-width:100%;font-size:9px;line-height:1.35}
+}

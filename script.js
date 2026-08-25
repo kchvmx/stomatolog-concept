@@ -6,10 +6,16 @@ const translations = {
     "services.eyebrow": "Що ми робимо", "services.title": "Послуги для усмішок<br><em>будь-якого віку.</em>", "services.text": "Від профілактики до складних рішень. Обираємо лише те, що справді потрібно саме вам.", "services.implants": "Імплантація", "services.implantsText": "Відновлення зуба за 1 день із довічною гарантією на імплант.", "services.veneers": "Вініри", "services.veneersText": "Ідеальна форма та природний колір зубів за 2 візити.", "services.braces": "Елайнери та брекети", "services.bracesText": "Виправлення прикусу непомітно та безболісно для дітей і дорослих.", "services.whitening": "Відбілювання", "services.whiteningText": "Безпечне освітлення емалі на 6–8 тонів за 45 хвилин.",
     "doctors.eyebrow": "Команда Milo", "doctors.title": "Люди, яким<br><em>можна довіряти.</em>", "doctors.link": "Обрати свого лікаря ↗", "doctors.anna": "Анна Коваль", "doctors.annaRole": "Головний лікар, стоматолог-ортопед, 10 років досвіду", "doctors.annaProcedures": "Вініри · Коронки · Естетична реставрація", "doctors.max": "Максим Левченко", "doctors.maxRole": "Стоматолог-хірург, імплантолог, 15 років досвіду", "doctors.maxProcedures": "Імплантація · Видалення зубів · Кісткова пластика", "doctors.book": "Записатися до Анни ↗", "doctors.bookMax": "Записатися до Максима ↗",
     "contact.eyebrow": "Перший крок до здорової усмішки", "contact.title": "Давайте<br><em>познайомимося.</em>", "contact.text": "Залиште контакти, і адміністратор зв'яжеться з вами, щоб підібрати зручний час.", "contact.address": "вул. Велика Васильківська, 72, Київ", "contact.hours": "Пн - Пт: 08:00 - 20:00<br>Сб: 09:00 - 16:00",
-    "form.name": "Ваше ім'я", "form.phone": "Номер телефону", "form.message": "Коротко про проблему або мету візиту", "form.namePlaceholder": "Олена", "form.messagePlaceholder": "Розкажіть, чим ми можемо допомогти", "form.service": "Послуга", "form.servicePlaceholder": "Консультація", "form.consent": "Я погоджуюся з політикою конфіденційності", "form.submit": "Записатися на безкоштовну консультацію ↗", "floating": "Записатися", "modal.eyebrow": "Безкоштовна консультація", "modal.title": "Заплануємо<br><em>ваш візит.</em>", "modal.text": "Залиште номер, і ми передзвонимо протягом робочого дня.", "footer.copy": "З турботою про усмішки<br>вашої родини.", "footer.rights": "Всі права захищено", "footer.up": "На початок ↑"
+    "form.name": "Ваше ім'я", "form.phone": "Номер телефону", "form.message": "Коротко про проблему або мету візиту", "form.namePlaceholder": "Олена", "form.messagePlaceholder": "Розкажіть, чим ми можемо допомогти", "form.service": "Послуга", "form.doctor": "Лікар", "form.anyService": "Будь-яка послуга", "form.anyDoctor": "Будь-який лікар", "form.consent": "Я погоджуюся з політикою конфіденційності", "form.submit": "Записатися на безкоштовну консультацію ↗", "floating": "Записатися", "modal.eyebrow": "Безкоштовна консультація", "modal.title": "Заплануємо<br><em>ваш візит.</em>", "modal.text": "Залиште номер, оберіть послугу та лікаря — ми передзвонимо протягом 15 хвилин у робочий час.", "footer.copy": "З турботою про усмішки<br>вашої родини.", "footer.rights": "Всі права захищено", "footer.up": "На початок ↑"
   },
   en: {
-    "nav.about": "About us", "nav.services": "Services", "nav.doctors": "Doctors", "nav.contacts": "Contacts", "hero.eyebrow": "A new generation family dental clinic", "hero.title": "Family dentistry in Lviv", "hero.text": "First consultation is <span class=\"accent-underline\">free</span>.", "hero.cta": "Book a free consultation ↗", "hero.more": "Discover more ↓", "hero.microcopy": "✓ No spam. We call within 15 minutes during business hours", "hero.proof": "years of practice", "hero.noteTitle": "Care that feels real", "hero.noteText": "Calm. Professional. Close.", "hero.badge": "on Google, 180+ reviews", "about.eyebrow": "About Milo Dental", "about.title": "A dental clinic where you can be yourself.", "about.text": "We combine modern technology, evidence-based medicine and a human touch. No pressure, clear answers and time for your questions.", "about.link": "Meet our approach ↗", "about.stat1": "Diagnosis<br>without rush", "about.stat2": "A clear<br>treatment plan", "about.stat3": "Comfort<br>at every step", "services.eyebrow": "What we do", "services.title": "Care for smiles<br><em>of every age.</em>", "services.text": "From prevention to complex solutions. We recommend only what is truly right for you.", "services.implants": "Implantology", "services.implantsText": "Restore a tooth in one day with a lifetime implant guarantee.", "services.veneers": "Veneers", "services.veneersText": "Ideal shape and natural color in just two visits.", "services.braces": "Aligners and braces", "services.bracesText": "Discreet, comfortable bite correction for children and adults.", "services.whitening": "Whitening", "services.whiteningText": "Safe enamel brightening by 6–8 shades in 45 minutes.", "doctors.eyebrow": "The Milo team", "doctors.title": "People you<br><em>can trust.</em>", "doctors.link": "Choose your doctor ↗", "doctors.anna": "Anna Koval", "doctors.annaRole": "Lead dentist, prosthodontist, 10 years of experience", "doctors.annaProcedures": "Veneers · Crowns · Aesthetic restorations", "doctors.max": "Maksym Levchenko", "doctors.maxRole": "Oral surgeon, implantologist, 15 years of experience", "doctors.maxProcedures": "Implants · Extractions · Bone grafting", "doctors.book": "Book with Anna ↗", "doctors.bookMax": "Book with Maksym ↗", "contact.eyebrow": "The first step to a healthy smile", "contact.title": "Let’s<br><em>get acquainted.</em>", "contact.text": "Leave your details and our administrator will call to find the best time for you.", "contact.address": "72 Velyka Vasylkivska St, Kyiv", "contact.hours": "Mon - Fri: 08:00 - 20:00<br>Sat: 09:00 - 16:00", "form.name": "Your name", "form.phone": "Phone number", "form.message": "A short note about your needs", "form.namePlaceholder": "Olena", "form.messagePlaceholder": "Tell us how we can help", "form.service": "Service", "form.servicePlaceholder": "Consultation", "form.consent": "I agree to the privacy policy", "form.submit": "Book a free consultation ↗", "floating": "Book now", "modal.eyebrow": "Free consultation", "modal.title": "Let’s plan<br><em>your visit.</em>", "modal.text": "Leave your number and we will call you back during business hours.", "footer.copy": "Caring for the smiles<br>of your family.", "footer.rights": "All rights reserved", "footer.up": "Back to top ↑"
+    "nav.about": "About us", "nav.services": "Services", "nav.doctors": "Doctors", "nav.contacts": "Contacts",
+    "hero.eyebrow": "A new generation family dental clinic", "hero.title": "Family dentistry in Lviv", "hero.text": "First consultation is <span class=\"accent-underline\">free</span>.", "hero.cta": "Book a free consultation ↗", "hero.more": "Discover more ↓", "hero.microcopy": "✓ No spam. We call within 15 minutes during business hours", "hero.proof": "years of practice", "hero.noteTitle": "Care that feels real", "hero.noteText": "Calm. Professional. Close.", "hero.badge": "on Google, 180+ reviews",
+    "about.eyebrow": "About Milo Dental", "about.title": "A dental clinic where you can be yourself.", "about.text": "We combine modern technology, evidence-based medicine and a human touch. No pressure, clear answers and time for your questions.", "about.link": "Meet our approach ↗", "about.stat1": "Diagnosis<br>without rush", "about.stat2": "A clear<br>treatment plan", "about.stat3": "Comfort<br>at every step",
+    "services.eyebrow": "What we do", "services.title": "Care for smiles<br><em>of every age.</em>", "services.text": "From prevention to complex solutions. We recommend only what is truly right for you.", "services.implants": "Implantology", "services.implantsText": "Restore a tooth in one day with a lifetime implant guarantee.", "services.veneers": "Veneers", "services.veneersText": "Ideal shape and natural color in just two visits.", "services.braces": "Aligners and braces", "services.bracesText": "Discreet, comfortable bite correction for children and adults.", "services.whitening": "Whitening", "services.whiteningText": "Safe enamel brightening by 6–8 shades in 45 minutes.",
+    "doctors.eyebrow": "The Milo team", "doctors.title": "People you<br><em>can trust.</em>", "doctors.link": "Choose your doctor ↗", "doctors.anna": "Anna Koval", "doctors.annaRole": "Lead dentist, prosthodontist, 10 years of experience", "doctors.annaProcedures": "Veneers · Crowns · Aesthetic restorations", "doctors.max": "Maksym Levchenko", "doctors.maxRole": "Oral surgeon, implantologist, 15 years of experience", "doctors.maxProcedures": "Implants · Extractions · Bone grafting", "doctors.book": "Book with Anna ↗", "doctors.bookMax": "Book with Maksym ↗",
+    "contact.eyebrow": "The first step to a healthy smile", "contact.title": "Let’s<br><em>get acquainted.</em>", "contact.text": "Leave your details and our administrator will call to find the best time for you.", "contact.address": "72 Velyka Vasylkivska St, Kyiv", "contact.hours": "Mon - Fri: 08:00 - 20:00<br>Sat: 09:00 - 16:00",
+    "form.name": "Your name", "form.phone": "Phone number", "form.message": "A short note about your needs", "form.namePlaceholder": "Olena", "form.messagePlaceholder": "Tell us how we can help", "form.service": "Service", "form.doctor": "Doctor", "form.anyService": "Any service", "form.anyDoctor": "Any doctor", "form.consent": "I agree to the privacy policy", "form.submit": "Book a free consultation ↗", "floating": "Book now", "modal.eyebrow": "Free consultation", "modal.title": "Let’s plan<br><em>your visit.</em>", "modal.text": "Leave your number, choose a service and doctor, and we will call you within 15 minutes during business hours.", "footer.copy": "Caring for the smiles<br>of your family.", "footer.rights": "All rights reserved", "footer.up": "Back to top ↑"
   }
 };
 
@@ -18,6 +24,7 @@ const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
 const modal = document.querySelector('#booking-modal');
 const modalService = document.querySelector('#modal-service');
+const modalDoctor = document.querySelector('#modal-doctor');
 
 function setLanguage(lang) {
   document.documentElement.lang = lang === 'ua' ? 'uk' : 'en';
@@ -33,34 +40,63 @@ function setLanguage(lang) {
   localStorage.setItem('milo-language', lang);
 }
 
-document.querySelectorAll('.language').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-menuToggle.addEventListener('click', () => { const isOpen = mobileNav.classList.toggle('is-open'); menuToggle.setAttribute('aria-expanded', String(isOpen)); });
-mobileNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { mobileNav.classList.remove('is-open'); menuToggle.setAttribute('aria-expanded', 'false'); }));
-window.addEventListener('scroll', () => header.classList.toggle('is-scrolled', window.scrollY > 10), { passive: true });
+function closeMobileNavigation() {
+  mobileNav.classList.remove('is-open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
 
 function openModal(event) {
   const trigger = event?.currentTarget;
-  if (trigger?.dataset.service && modalService) {
-    const lang = document.documentElement.lang === 'uk' ? 'ua' : 'en';
-    modalService.value = translations[lang][`services.${trigger.dataset.service}`] || '';
-  }
-  modal.classList.add('is-open'); modal.setAttribute('aria-hidden', 'false'); document.body.classList.add('modal-open'); modal.querySelector('input').focus();
+  const service = trigger?.dataset.service || 'any';
+  const doctor = trigger?.dataset.doctor || 'any';
+
+  if (modalService) modalService.value = service;
+  if (modalDoctor) modalDoctor.value = doctor;
+
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  modal.querySelector('input[name="name"]').focus();
 }
-function closeModal() { modal.classList.remove('is-open'); modal.setAttribute('aria-hidden', 'true'); document.body.classList.remove('modal-open'); }
-document.querySelectorAll('.open-modal').forEach((button) => button.addEventListener('click', openModal));
-modal.querySelectorAll('[data-close-modal]').forEach((element) => element.addEventListener('click', closeModal));
-document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+
+function closeModal() {
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+}
 
 function handleForm(form) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const status = form.querySelector('.form-status');
-    status.textContent = document.documentElement.lang === 'uk' ? 'Дякуємо. Ми зателефонуємо вам найближчим часом.' : 'Thank you. We will call you shortly.';
+    status.textContent = document.documentElement.lang === 'uk'
+      ? 'Дякуємо. Ми зателефонуємо вам протягом 15 хвилин у робочий час.'
+      : 'Thank you. We will call you within 15 minutes during business hours.';
     form.reset();
   });
 }
-handleForm(document.querySelector('#lead-form')); handleForm(document.querySelector('#modal-form'));
 
-const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), { threshold: .08 });
+document.querySelectorAll('.language').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+menuToggle.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('is-open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
+mobileNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileNavigation));
+window.addEventListener('scroll', () => header.classList.toggle('is-scrolled', window.scrollY > 10), { passive: true });
+document.querySelectorAll('.open-modal').forEach((button) => button.addEventListener('click', openModal));
+modal.querySelectorAll('[data-close-modal]').forEach((element) => element.addEventListener('click', closeModal));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+});
+
+handleForm(document.querySelector('#lead-form'));
+handleForm(document.querySelector('#modal-form'));
+
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+  if (entry.isIntersecting) {
+    entry.target.classList.add('is-visible');
+    observer.unobserve(entry.target);
+  }
+}), { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 setLanguage(localStorage.getItem('milo-language') || 'ua');
