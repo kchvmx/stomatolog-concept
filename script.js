@@ -1,6 +1,6 @@
 const translations = {
   ua: {
-    "nav.about": "Про нас", "nav.services": "Послуги", "nav.doctors": "Лікарі", "nav.contacts": "Контакти",
+    "nav.about": "Про нас", "nav.services": "Послуги", "nav.doctors": "Лікарі", "nav.contacts": "Контакти", "mobile.call": "Зателефонувати",
     "hero.eyebrow": "Сімейна стоматологія нового покоління", "hero.title": "Сімейна стоматологія у Львові", "hero.text": "Первинна консультація <span class=\"accent-underline\">безкоштовно</span>.", "hero.cta": "Записатися на безкоштовну консультацію ↗", "hero.more": "Дізнатися більше ↓", "hero.microcopy": "✓ Без спаму. Передзвонимо протягом 15 хвилин у робочий час", "hero.proof": "років практики", "hero.noteTitle": "Піклуємося по-справжньому", "hero.noteText": "Спокійно. Професійно. Поруч.", "hero.badge": "на Google, 180+ відгуків",
     "about.eyebrow": "Про Milo Dental", "about.title": "Стоматологія, в якій легко бути собою.", "about.text": "Ми поєднали сучасні технології, доказову медицину та людяне ставлення. Тут не страшно, зрозуміло і завжди є час на ваші запитання.", "about.link": "Познайомитися з нами ↗", "about.stat1": "Діагностика<br>без поспіху", "about.stat2": "Прозорий<br>план лікування", "about.stat3": "Комфорт<br>на кожному кроці",
     "services.eyebrow": "Що ми робимо", "services.title": "Послуги для усмішок<br><em>будь-якого віку.</em>", "services.text": "Від профілактики до складних рішень. Обираємо лише те, що справді потрібно саме вам.", "services.implants": "Імплантація", "services.implantsText": "Відновлення зуба за 1 день із довічною гарантією на імплант.", "services.veneers": "Вініри", "services.veneersText": "Ідеальна форма та природний колір зубів за 2 візити.", "services.braces": "Елайнери та брекети", "services.bracesText": "Виправлення прикусу непомітно та безболісно для дітей і дорослих.", "services.whitening": "Відбілювання", "services.whiteningText": "Безпечне освітлення емалі на 6–8 тонів за 45 хвилин.",
@@ -9,7 +9,7 @@ const translations = {
     "form.name": "Ваше ім'я", "form.phone": "Номер телефону", "form.message": "Коротко про проблему або мету візиту", "form.namePlaceholder": "Олена", "form.messagePlaceholder": "Розкажіть, чим ми можемо допомогти", "form.service": "Послуга", "form.doctor": "Лікар", "form.anyService": "Будь-яка послуга", "form.anyDoctor": "Будь-який лікар", "form.consent": "Я погоджуюся з політикою конфіденційності", "form.submit": "Записатися на безкоштовну консультацію ↗", "floating": "Записатися", "modal.eyebrow": "Безкоштовна консультація", "modal.title": "Заплануємо<br><em>ваш візит.</em>", "modal.text": "Залиште номер, оберіть послугу та лікаря — ми передзвонимо протягом 15 хвилин у робочий час.", "footer.copy": "З турботою про усмішки<br>вашої родини.", "footer.rights": "Всі права захищено", "footer.up": "На початок ↑"
   },
   en: {
-    "nav.about": "About us", "nav.services": "Services", "nav.doctors": "Doctors", "nav.contacts": "Contacts",
+    "nav.about": "About us", "nav.services": "Services", "nav.doctors": "Doctors", "nav.contacts": "Contacts", "mobile.call": "Call us",
     "hero.eyebrow": "A new generation family dental clinic", "hero.title": "Family dentistry in Lviv", "hero.text": "First consultation is <span class=\"accent-underline\">free</span>.", "hero.cta": "Book a free consultation ↗", "hero.more": "Discover more ↓", "hero.microcopy": "✓ No spam. We call within 15 minutes during business hours", "hero.proof": "years of practice", "hero.noteTitle": "Care that feels real", "hero.noteText": "Calm. Professional. Close.", "hero.badge": "on Google, 180+ reviews",
     "about.eyebrow": "About Milo Dental", "about.title": "A dental clinic where you can be yourself.", "about.text": "We combine modern technology, evidence-based medicine and a human touch. No pressure, clear answers and time for your questions.", "about.link": "Meet our approach ↗", "about.stat1": "Diagnosis<br>without rush", "about.stat2": "A clear<br>treatment plan", "about.stat3": "Comfort<br>at every step",
     "services.eyebrow": "What we do", "services.title": "Care for smiles<br><em>of every age.</em>", "services.text": "From prevention to complex solutions. We recommend only what is truly right for you.", "services.implants": "Implantology", "services.implantsText": "Restore a tooth in one day with a lifetime implant guarantee.", "services.veneers": "Veneers", "services.veneersText": "Ideal shape and natural color in just two visits.", "services.braces": "Aligners and braces", "services.bracesText": "Discreet, comfortable bite correction for children and adults.", "services.whitening": "Whitening", "services.whiteningText": "Safe enamel brightening by 6–8 shades in 45 minutes.",
@@ -45,11 +45,7 @@ function closeMobileNavigation() {
   menuToggle.setAttribute('aria-expanded', 'false');
 }
 
-function openModal(event) {
-  const trigger = event?.currentTarget;
-  const service = trigger?.dataset.service || 'any';
-  const doctor = trigger?.dataset.doctor || 'any';
-
+function openBookingModal(service = 'any', doctor = 'any') {
   if (modalService) modalService.value = service;
   if (modalDoctor) modalDoctor.value = doctor;
 
@@ -57,6 +53,16 @@ function openModal(event) {
   modal.setAttribute('aria-hidden', 'false');
   document.body.classList.add('modal-open');
   modal.querySelector('input[name="name"]').focus();
+}
+
+function openModal(event) {
+  const trigger = event?.currentTarget;
+  openBookingModal(trigger?.dataset.service || 'any', trigger?.dataset.doctor || 'any');
+}
+
+function openServiceCard(event) {
+  if (window.innerWidth > 640 || event.target.closest('button, a, input, select, textarea, label')) return;
+  openBookingModal(event.currentTarget.dataset.service, 'any');
 }
 
 function closeModal() {
@@ -84,6 +90,7 @@ menuToggle.addEventListener('click', () => {
 mobileNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileNavigation));
 window.addEventListener('scroll', () => header.classList.toggle('is-scrolled', window.scrollY > 10), { passive: true });
 document.querySelectorAll('.open-modal').forEach((button) => button.addEventListener('click', openModal));
+document.querySelectorAll('.service-card[data-service]').forEach((card) => card.addEventListener('click', openServiceCard));
 modal.querySelectorAll('[data-close-modal]').forEach((element) => element.addEventListener('click', closeModal));
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();

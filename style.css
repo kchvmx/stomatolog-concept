@@ -51,3 +51,32 @@
   .service-card h3{font-size:17px}
   .service-card p{max-width:100%;font-size:9px;line-height:1.35}
 }
+
+/* Mobile-only navigation, service cards and contact-flow refinement. */
+.mobile-contact-details{display:none}
+@media(max-width:900px){
+  .nav-shell{gap:16px}
+  .nav-actions{margin-left:auto;gap:8px}
+  .language-switch{margin-right:2px}
+  .menu-toggle{margin:0;padding:8px 0 8px 8px;align-items:center;justify-content:center}
+  .mobile-nav{padding:0 20px 22px}
+  .mobile-nav.is-open{display:block}
+  .mobile-nav-phone{display:flex!important;align-items:center;justify-content:space-between;padding:15px 0 14px;border-bottom:1px solid var(--line);color:var(--ink)}
+  .mobile-nav-phone span{font-size:15px;font-weight:800;letter-spacing:-.02em}
+  .mobile-nav-phone small{color:var(--blue);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .mobile-nav-links{display:grid;gap:16px;padding-top:19px}
+}
+@media(max-width:640px){
+  .service-card[data-service]{cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  .service-card[data-service] .service-book{display:none}
+  .service-card h3{font-size:20px}
+  .service-card p{font-size:10.5px;line-height:1.42}
+  .service-card[data-service]:active{transform:scale(.98);box-shadow:none}
+  .contact-grid{display:flex;flex-direction:column;gap:28px}
+  .contact-copy{order:1}
+  .contact-copy>.contact-details{display:none}
+  .lead-form{order:2;width:100%}
+  .mobile-contact-details{display:grid;order:3;gap:8px;margin-top:0}
+  .mobile-contact-details a{font-size:17px;font-weight:700}
+  .mobile-contact-details span{color:#c6e5f2;font-size:12px;margin-top:12px}
+}
