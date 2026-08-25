@@ -61,7 +61,13 @@ function openModal(event) {
 }
 
 function openServiceCard(event) {
-  if (window.innerWidth > 640 || event.target.closest('button, a, input, select, textarea, label')) return;
+  if (event.target.closest('a, input, select, textarea, label')) return;
+  openBookingModal(event.currentTarget.dataset.service, 'any');
+}
+
+function openServiceCardWithKeyboard(event) {
+  if (!['Enter', ' '].includes(event.key)) return;
+  event.preventDefault();
   openBookingModal(event.currentTarget.dataset.service, 'any');
 }
 
@@ -90,7 +96,10 @@ menuToggle.addEventListener('click', () => {
 mobileNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileNavigation));
 window.addEventListener('scroll', () => header.classList.toggle('is-scrolled', window.scrollY > 10), { passive: true });
 document.querySelectorAll('.open-modal').forEach((button) => button.addEventListener('click', openModal));
-document.querySelectorAll('.service-card[data-service]').forEach((card) => card.addEventListener('click', openServiceCard));
+document.querySelectorAll('.service-card[data-service]').forEach((card) => {
+  card.addEventListener('click', openServiceCard);
+  card.addEventListener('keydown', openServiceCardWithKeyboard);
+});
 modal.querySelectorAll('[data-close-modal]').forEach((element) => element.addEventListener('click', closeModal));
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();

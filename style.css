@@ -80,3 +80,17 @@
   .mobile-contact-details a{font-size:17px;font-weight:700}
   .mobile-contact-details span{color:#c6e5f2;font-size:12px;margin-top:12px}
 }
+
+/* Desktop service cards and mobile header phone placement. */
+.mobile-header-phone{display:none}
+.service-card[data-service]{cursor:pointer}
+.service-card[data-service]:focus-visible{outline:3px solid rgba(47,128,197,.35);outline-offset:3px}
+@media(max-width:900px){
+  .mobile-header-phone{display:inline-flex;margin-left:auto;white-space:nowrap;color:var(--ink);font-family:"Nunito Sans",Arial,"Helvetica Neue",sans-serif;font-size:10px;font-weight:800;letter-spacing:-.02em}
+  .nav-actions{margin-left:0}
+  .mobile-nav-phone{display:none!important}
+}
+@media(min-width:641px){
+  .service-card[data-service]:hover{transform:translateY(-6px);background:#f0f8fc;box-shadow:var(--shadow)}
+  .service-card-feature[data-service]:hover{background:var(--blue);color:var(--white)}
+}
